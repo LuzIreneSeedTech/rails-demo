@@ -1,0 +1,2 @@
+import r from"buffer-fill";import e from"buffer-alloc-unsafe";import f from"buffer";var o={};var t=f.Buffer;var a=r;var n=e;o=function alloc(r,e,f){if("number"!==typeof r)throw new TypeError('"size" argument must be a number');if(r<0)throw new RangeError('"size" argument must not be negative');if(t.alloc)return t.alloc(r,e,f);var o=n(r);if(0===r)return o;if(void 0===e)return a(o,0);"string"!==typeof f&&(f=void 0);return a(o,e,f)};var u=o;export default u;
+

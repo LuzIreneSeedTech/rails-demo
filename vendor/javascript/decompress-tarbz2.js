@@ -1,0 +1,2 @@
+import r from"decompress-tar";import e from"file-type";import o from"is-stream";import t from"seek-bzip";import f from"unbzip2-stream";import m from"buffer";var s={};var i=m.Buffer;const p=r;const a=e;const c=o;const u=t;const n=f;s=()=>r=>i.isBuffer(r)||c(r)?!i.isBuffer(r)||a(r)&&"bz2"===a(r).ext?i.isBuffer(r)?p()(u.decode(r)):p()(r.pipe(n())):Promise.resolve([]):Promise.reject(new TypeError(`Expected a Buffer or Stream, got ${typeof r}`));var d=s;export default d;
+

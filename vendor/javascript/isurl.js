@@ -1,0 +1,2 @@
+import t from"has-to-string-tag-x";import o from"is-object";var n={};const s=t;const c=o;const r=Object.prototype.toString;const e="[object URL]";const a="hash";const i="host";const h="hostname";const p="href";const m="password";const l="pathname";const f="port";const u="protocol";const b="search";const g="username";const isURL=(t,o)=>!!c(t)&&(!s&&r.call(t)===e||p in t&&(u in t&&(g in t&&(m in t&&(h in t&&(f in t&&(i in t&&(l in t&&(b in t&&(a in t&&!(true!==o&&!c(t.searchParams))))))))))));isURL.lenient=t=>isURL(t,true);n=isURL;var j=n;export default j;
+

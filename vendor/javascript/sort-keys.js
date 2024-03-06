@@ -1,0 +1,2 @@
+import r from"is-plain-obj";var a={};var e=r;a=function(r,a){if(!e(r))throw new TypeError("Expected a plain object");a=a||{};"function"===typeof a&&(a={compare:a});var t=a.deep;var o=[];var n=[];var sortKeys=function(r){var v=o.indexOf(r);if(-1!==v)return n[v];var p={};var f=Object.keys(r).sort(a.compare);o.push(r);n.push(p);for(var i=0;i<f.length;i++){var u=f[i];var c=r[u];p[u]=t&&e(c)?sortKeys(c):c}return p};return sortKeys(r)};var t=a;export default t;
+

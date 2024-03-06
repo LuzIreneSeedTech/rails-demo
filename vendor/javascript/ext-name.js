@@ -1,0 +1,2 @@
+import t from"ext-list";import e from"sort-keys-length";var r={};const s=t;const m=e;r=t=>{const e=m.desc(s());const r=Object.keys(e).filter(e=>t.endsWith(e));return 0===r.length?[]:r.map(t=>({ext:t,mime:e[t]}))};r.mime=t=>{const e=m.desc(s());const r=Object.keys(e).filter(r=>e[r]===t);return 0===r.length?[]:r.map(t=>({ext:t,mime:e[t]}))};var o=r;const n=r.mime;export default o;export{n as mime};
+
